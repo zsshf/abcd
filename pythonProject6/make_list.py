@@ -38,23 +38,23 @@ def makelist(name: str):
         for k in range(n4):
             n3 = random.randint(n1, 89)
             l[n3][i + 1] = 0
-    book = xlwt.Workbook(encoding='utf-8',style_compression=0)
-    sheet = book.add_sheet(name+'班数据',cell_overwrite_ok=True)
+    book = xlwt.Workbook(encoding='utf-8', style_compression=0)
+    sheet = book.add_sheet(name + '班数据', cell_overwrite_ok=True)
     col = []
     col.append('学号')
-    for i in range(1,22):
-        col.append('第'+ str(i) +'记录')
-    print(col)
-    for i in range(0,22):
-        sheet.write(0,i,col[i])
+    for i in range(1, 22):
+        col.append('第' + str(i) + '次记录')
+    for i in range(0, 22):
+        sheet.write(0, i, col[i])
     for i in range(90):
         data = l[i]
         for j in range(22):
-            sheet.write(i+1,j,data[j])
-    savepath = 'C:/users/yanyan/PycharmProjects/pythonProject6//'+ name + '班表格.xls'
+            sheet.write(i + 1, j, data[j])
+    savepath = 'C:/Users/yanyan/PycharmProjects/abcd/pythonProject6/data/' + name + '班表格.xls'
     book.save(savepath)
     # print(n1)  # 打印n1
     # print(l)  # 打印表格
 
-l=[]
-l=makelist('a')
+
+for i in range(65, 70):
+    makelist(chr(i))
