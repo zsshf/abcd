@@ -97,3 +97,4 @@ for i in range(65, 70):
     print("抽点名单：", namelist)
     E = accumulate()
     print('E={:.02%}'.format(E))
+    print()

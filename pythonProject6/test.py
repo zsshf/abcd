@@ -154,6 +154,9 @@ for i in range(0, 100):
     #print("根据缺勤率排好序的列表：", sortlist)
     namelist = nameList()
     print("抽点名单：", namelist)
+    E= accumulate()
+    print('E={:.02%}'.format(E))
+    print()
     e.append(accumulate())
 
     #print('E={:.02%}'.format(e[]))
@@ -183,7 +186,7 @@ plt.bar(  # 设置x和y
     # 设置legend的名称
     label="y")
 plt.xlabel(  # x标签的名称
-    "次数",
+    "times",
 
     # x标签的字体大小
     size=12,
