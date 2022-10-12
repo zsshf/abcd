@@ -149,9 +149,9 @@ for i in range(0, 100):
     l1 = []
     l1 = read_xls(path)
     l1 = to_int(l1)
-    print("生成学生到勤记录：", l1)
+    #print("生成学生到勤记录：", l1)
     sortlist = sort()
-    print("根据缺勤率排好序的列表：", sortlist)
+    #print("根据缺勤率排好序的列表：", sortlist)
     namelist = nameList()
     print("抽点名单：", namelist)
     e.append(accumulate())
