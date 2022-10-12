@@ -86,7 +86,7 @@ def to_int(l: list):
 
 for i in range(65, 70):
     print(chr(i) + '班:')
-    path = 'D:\pyCharm\pythonProject\\' + chr(i) + '班表格.xls'
+    path = 'C:/users/yanyan/PycharmProjects/abcd/pythonProject6/data//' + chr(i) + '班表格.xls'
     l1 = []
     l1 = read_xls(path)
     l1 = to_int(l1)
